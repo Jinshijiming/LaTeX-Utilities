@@ -151,9 +151,9 @@ export class Extension {
 
     constructor() {
         this.extensionRoot = path.resolve(`${__dirname}/../`)
-        const self = vscode.extensions.getExtension('tecosaur.latex-utilities') as vscode.Extension<any>
+        const self = vscode.extensions.getExtension('jsjm.latex-utilities-jsjm') as vscode.Extension<any>
         this.telemetryReporter = new TelemetryReporter(
-            'tecosaur.latex-utilities',
+            'jsjm.latex-utilities-jsjm',
             self.packageJSON.version,
             '11a955d7-02dc-4c1a-85e4-053858f88af0'
         )

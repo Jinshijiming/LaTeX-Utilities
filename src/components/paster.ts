@@ -565,9 +565,11 @@ export class Paster {
 
     public async saveAndPaste(editor: vscode.TextEditor, imgPath: string, oldPath?: string) {
         this.extension.logger.addLogMessage(`save and paste. imagePath: ${imgPath}`)
+
+        const basefile = editor.document.uri.fsPath
         if (oldPath) {
             await fs.copyFile(oldPath, imgPath)
-            const imageString = this.renderImagePaste(this.basePathConfig, imgPath)
+            const imageString = this.renderImagePaste(path.dirname(basefile), imgPath)
 
             const current = editor.selection
             if (!current.isEmpty) {
@@ -600,7 +602,7 @@ export class Paster {
                 return
             }
 
-            const imageString = this.renderImagePaste(this.basePathConfig, imgPath)
+            const imageString = this.renderImagePaste(path.dirname(basefile), imgPath)
 
             const current = editor.selection
             if (!current.isEmpty) {

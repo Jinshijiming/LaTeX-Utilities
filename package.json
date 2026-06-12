@@ -1,15 +1,15 @@
 {
-    "name": "latex-utilities",
-    "displayName": "LaTeX Utilities",
+    "name": "latex-utilities-jsjm",
+    "displayName": "LaTeX Utilities(Fix)",
     "description": "An add-on to LaTeX Workshop that provides some fancy features that are less vital to the basic experience editing a LaTeX document, but can be rather nice to have.",
     "icon": "icon.png",
     "version": "0.4.14",
-    "publisher": "tecosaur",
+    "publisher": "jsjm",
     "license": "MIT",
-    "homepage": "https://github.com/tecosaur/LaTeX-Utilities",
+    "homepage": "https://github.com/Jinshijiming/LaTeX-Utilities",
     "repository": {
         "type": "git",
-        "url": "https://github.com/tecosaur/LaTeX-Utilities.git"
+        "url": "https://github.com/Jinshijiming/LaTeX-Utilities.git"
     },
     "engines": {
         "vscode": "^1.63.1"
@@ -758,27 +758,5 @@
         "latex-utensils": "^4.1.0",
         "tmp": "^0.2.1",
         "vscode-extension-telemetry": "^0.1.2"
-    },
-    "badges": [
-        {
-            "url": "https://vsmarketplacebadges.dev/version-short/tecosaur.latex-utilities.svg?style=flat-square&color=579983&logo=visual-studio-code&logoColor=C6EDE2",
-            "href": "https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities&",
-            "description": "VSCode Marketplace"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/downloads-short/tecosaur.latex-utilities.svg?style=flat-square&color=579983",
-            "href": "https://vsmarketplacebadges.dev/downloads-short/tecosaur.latex-utilities.svg",
-            "description": "version"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/installs-short/tecosaur.latex-utilities.svg?style=flat-square&color=579983",
-            "href": "https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities&",
-            "description": "installs"
-        },
-        {
-            "url": "https://vsmarketplacebadges.dev/rating-short/tecosaur.latex-utilities.svg?style=flat-square&color=579983",
-            "href": "https://marketplace.visualstudio.com/items?itemName=tecosaur.latex-utilities&",
-            "description": "rating"
-        }
-    ]
+    }
 }
